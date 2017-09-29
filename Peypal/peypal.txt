@@ -1,0 +1,6 @@
+robots.txt
+log
+username: tradaviahe
+brutforce
+pass: larissa
+Flag{b4d__c4ptch4_1mpl3m3nt4ti0n}
