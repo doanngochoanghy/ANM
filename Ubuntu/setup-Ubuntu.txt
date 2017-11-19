@@ -45,3 +45,9 @@ D5D52613 C3D12E98 BC49967F 7652EED2
 E36B85CC 84991F19 7575D828 470A92AB
 —— END LICENSE ——
 
+*python
+install pip: sudo apt-get install python-pip
+install requests: sudo apt-get install python-requests
+install pysocks: git clone https://github.com/Anorov/PySocks
+		pip install PySocks/
+	
