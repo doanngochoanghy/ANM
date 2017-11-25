@@ -50,4 +50,8 @@ install pip: sudo apt-get install python-pip
 install requests: sudo apt-get install python-requests
 install pysocks: git clone https://github.com/Anorov/PySocks
 		pip install PySocks/
-	
+install selenium: git clone https://github.com/SeleniumHQ/selenium.git
+		pip install selenium	
+		webdriver:
+                https://github.com/mozilla/geckodriver/releases
+                cp Downloads/geckodriver /usr/bin
