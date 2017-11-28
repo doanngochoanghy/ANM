@@ -1,0 +1,23 @@
+1511846163927	geckodriver	INFO	geckodriver 0.19.1
+1511846163959	geckodriver	INFO	Listening on 127.0.0.1:55369
+1511846165328	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.p9K6hjM5ztcn"
+1511846170989	Marionette	INFO	Enabled via --marionette
+1511846177044	Marionette	INFO	Listening on port 43639
+1511846177152	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511846177263	Marionette	DEBUG	Register listener.js for window 2147483649
+1511846177309	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511846178199	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511846178200	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: http://web003.com/assets/js/jquery-1.10.2.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511846178669	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://web003.com/Users/Login"
+1511846178690	Marionette	DEBUG	Received DOM event "pageshow" for "http://web003.com/Users/Login"
+1511846179378	Marionette	DEBUG	Received DOM event "beforeunload" for "http://web003.com/Users/Login"
+1511846179588	Marionette	DEBUG	Received DOM event "pagehide" for "http://web003.com/Users/Login"
+1511846179591	Marionette	DEBUG	Received DOM event "unload" for "http://web003.com/Users/Login"
+JavaScript warning: http://web003.com/assets/js/jquery-1.10.2.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511846179757	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://web003.com/Message"
+1511846179765	Marionette	DEBUG	Received DOM event "pageshow" for "http://web003.com/Message"
+1511846179992	Marionette	DEBUG	Register listener.js for window 2147483654
+1511846181666	Marionette	DEBUG	Register listener.js for window 4294967297
+1511846312416	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: timeout
+1511846354601	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error

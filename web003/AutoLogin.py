@@ -1,6 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import time
 # while True:
 browser=webdriver.Firefox();
@@ -23,7 +25,11 @@ browser.get("http://web003.com/Message")
 buttons=browser.find_elements_by_class_name("btn")
 # for button in buttons:
 buttons[0].send_keys(Keys.CONTROL+Keys.RETURN)
+alert = browser.switch_to_alert()
+alert.accept()
+WebDriverWait(browser, 30).until(EC.presence_of_element_located((By.ID, 'Passwd')))
 windows = browser.window_handles
+print(windows)
 browser.switch_to.window(windows[1])
 
 browser.implicitly_wait(30)
