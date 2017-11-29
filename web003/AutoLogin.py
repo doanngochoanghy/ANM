@@ -3,37 +3,31 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.alert import Alert
 import time
 # while True:
-browser=webdriver.Firefox();
-browser.get("http://web003.com/Users/Login")
-# # ActionChains(browser).key_down(Keys.CONTROL).send_keys('t').key_up(Keys.CONTROL).perform()
-# browser.execute_script('''window.open("http://bings.com","_blank");''')
-# windows = browser.window_handles
-# browser.switch_to.window(windows[0])
-# time.sleep(1)
-# browser.switch_to.window(windows[1])
-
-
-actions = ActionChains(browser)
+driver=webdriver.Firefox();
+driver.implicitly_wait(30)
+driver.maximize_window()
+driver.get("http://web003.com/Users/Login")
+actions = ActionChains(driver)
 actions.send_keys('admin')
 actions.send_keys(Keys.TAB);
 actions.send_keys('admin')
 actions.send_keys(Keys.ENTER);
 actions.perform()
-browser.get("http://web003.com/Message")
-buttons=browser.find_elements_by_class_name("btn")
-# for button in buttons:
-buttons[0].send_keys(Keys.CONTROL+Keys.RETURN)
-alert = browser.switch_to_alert()
-alert.accept()
-WebDriverWait(browser, 30).until(EC.presence_of_element_located((By.ID, 'Passwd')))
-windows = browser.window_handles
-print(windows)
-browser.switch_to.window(windows[1])
-
-browser.implicitly_wait(30)
-browser.maximize_window()
-time.sleep(5)
-# browser.quit()
-	# pa	ss
+driver.get("http://web003.com/Message")
+buttons=driver.find_elements_by_class_name("btn")
+for i in range(len(buttons)):
+	buttons[i].click()
+	try:
+		Alert(driver).accept()
+		pass
+	except Exception as e:
+		pass
+	finally:
+		driver.back()
+		buttons=driver.find_elements_by_class_name("btn")
+		pass
+driver.quit()
+# pass
