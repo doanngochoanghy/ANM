@@ -1,0 +1,6 @@
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [22:1841]
+-A INPUT -m conntrack --ctstate NEW,RELATED,ESTABLISHED -j ACCEPT
+-A OUTPUT -p tcp -m tcp --sport 80 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+COMMIT
